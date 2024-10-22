@@ -1,601 +1,163 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>AGIAgent导航站</title>
-    <link rel="shortcut icon" href="favcion.ico"/>
-    <link rel="stylesheet" href=" css/iconfont.css">
-    <link rel="stylesheet" href="../plug-in/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-<div class="container" id="container">
-    <aside class="left-bar" id="leftBar">
-        <div class="title">
-            <p>AGIAgent导航栏</p>
-        </div>
-        <nav class="nav">
-
-            <div class="item active"><a href=""><i class="iconfont icon-daohang2"></i>ChatGPT AI_Agent</a><i
-                    class="line"></i>
-            </div>
-            <ul class="nav-item" id="navItem">
-                <li><a href="#aigw"><i class="iconfont icon-yunying"></i>AI文本工具（国外）</a></li>
-                <li><a href="#aign"><i class="iconfont icon-tool"></i>AI文本工具（国内）</a></li>
-                <li><a href="#aihh"><i class="iconfont icon-designer"></i>AI绘画工具</a></li>
-                <li><a href="#aibg"><i class="iconfont icon-github"></i>AI办公工具</a></li>
-                <li><a href="#aisp"><i class="iconfont icon-xuexi1"></i>AI视频工具</a></li>
-                <li><a href="#aiyp"><i class="iconfont icon-yunying"></i>AI音频工具</a></li>
-                <li><a href="#apigj"><i class="iconfont icon-yunying"></i>API工具</a></li>
-                <li><a href="#gwgj"><i class="iconfont icon-yunying"></i>国外工具</a></li>
-                <li><a href="/admin.html"><i class="iconfont icon-yunying"></i>【我的后台】</a></li>
-                <li><a href="/agent.html"><i class="iconfont icon-yunying"></i>【Agent】</a></li>
-            </ul>
-            <div class="item comment">
-                <a target="_blank" href="tel:18529090901"><i class="iconfont icon-liuyan"></i>联系我们</a>
-                <a href="mailto:18529090901@163.com?subject=发送邮件">发送邮件</a>
-            </div>
-        </nav>
-    </aside>
-    <section class="main">
-        <div id="mainContent">
-            <!-- 手机端菜单 -->
-            <div id="menu-box">
-                <div id="menu">
-                    <input type="checkbox" id="menu-form">
-                    <label for="menu-form" class="menu-spin">
-                        <div class="line diagonal line-1"></div>
-                        <div class="line horizontal"></div>
-                        <div class="line diagonal line-2"></div>
-                    </label>
-                </div>
-            </div>
-
-            <!-- AI文本工具（国外） -->
-            <div class="box">
-                <a href="" name="aigw"></a>
-                <div class="sub-category">
-                    <div><i class="iconfont icon-yunying"></i>AI文本工具（国外）要爬楼梯</div>
-                </div>
-                <div>
-                    <a target="_blank" href="https://chatgpt.com/">
-                        <div class="item">
-                            <div class="no-logo">ChatGPT</div>
-                            <div class="desc">OpenAI旗下AI对话工具</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://www.anthropic.com/claude">
-                        <div class="item">
-                            <div class="no-logo">Claude</div>
-                            <div class="desc">ChatGPT最为有力的竞争对手之一</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://gemini.google.com/">
-                        <div class="item">
-                            <div class="no-logo">Bard/Gemini</div>
-                            <div class="desc">Google推出的AI聊天对话机器人</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://copilot.microsoft.com/">
-                        <div class="item">
-                            <div class="no-logo">Copilot</div>
-                            <div class="desc">微软推出的网页版Copilot助手 【只能用edge浏览器】</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://x.ai/">
-                        <div class="item">
-                            <div class="no-logo">grok xAI</div>
-                            <div class="desc">马克斯旗下xAI推出的人工智能助手</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://poe.com/login">
-                        <div class="item">
-                            <div class="no-logo">Poe</div>
-                            <div class="desc">Quora推出的问答机器人集合平台</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://www.notion.so/zh-cn/product/ai">
-                        <div class="item">
-                            <div class="no-logo">Notion AI</div>
-                            <div class="desc">Notion推出的AI内容创作助手</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://llama.meta.com/">
-                        <div class="item">
-                            <div class="no-logo">Meet Llama 3.1</div>
-                            <div class="desc">最强的开源大语言模型</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://www.perplexity.ai/">
-                        <div class="item">
-                            <div class="no-logo">perplexity</div>
-                            <div class="desc">最好用的人工智能搜索工具</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://www.microsoft.com/zh-cn/edge/features/copilot?form">
-                        <div class="item">
-                            <div class="no-logo">BingChat</div>
-                            <div class="desc">必应聊天</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- AI文本工具（国内） -->
-            <div class="box">
-                <a href="" name="aign"></a>
-                <div class="sub-category">
-                    <div><i class="iconfont icon-tool"></i>AI文本工具（国内）</div>
-                </div>
-                <div>
-                    <a target="_blank" href="https://yiyan.baidu.com/">
-                        <div class="item">
-                            <div class="no-logo">文心一言</div>
-                            <div class="desc">百度推出的基于文心大模型的AI对话互动工具</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://tongyi.aliyun.com/qianwen/">
-                        <div class="item">
-                            <div class="no-logo">通义千问</div>
-                            <div class="desc">阿里巴巴推出的类ChatGT响应人类指令的大模型</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://chatglm.cn/?lang=zh">
-                        <div class="item">
-                            <div class="no-logo">智谱清言</div>
-                            <div class="desc">智谱AI推出的生成式AI助手，基于ChatGLM2</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://kimi.moonshot.cn/">
-                        <div class="item">
-                            <div class="no-logo">KIMI</div>
-                            <div class="desc">Kimi.ai月之暗面Moonshot AI推出的聊天机器人</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://xinghuo.xfyun.cn/">
-                        <div class="item">
-                            <div class="no-logo">讯飞星火</div>
-                            <div class="desc">讯飞星火-懂你的AI助手</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://www.doubao.com/chat/">
-                        <div class="item">
-                            <div class="no-logo">字节豆包</div>
-                            <div class="desc">字节跳动最新推出的免费AI对话助手</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://hailuoai.com/">
-                        <div class="item">
-                            <div class="no-logo">海螺问问</div>
-                            <div class="desc">有问题，为什么不问问神奇海螺呢？</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://yuewen.cn/chats/new">
-                        <div class="item">
-                            <div class="no-logo">跃问</div>
-                            <div class="desc">阶跃星辰推出的之处多模态的AI聊天机器人</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://metaso.cn/">
-                        <div class="item">
-                            <div class="no-logo">秘塔AI搜索</div>
-                            <div class="desc">没有广告，直达结果</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://www.sou.com/">
-                        <div class="item">
-                            <div class="no-logo">360AI搜索</div>
-                            <div class="desc">新一代智能答案引擎</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://wukong.com/tool?state={%22query%22:{%22utm_source%22:%22ai-bot.cn%22}}">
-                        <div class="item">
-                            <div class="no-logo">小悟空</div>
-                            <div class="desc">AI聊天问答</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://writersdesk.net/#/dashboard">
-                        <div class="item">
-                            <div class="no-logo">星火网文助手</div>
-                            <div class="desc">AI创作辅助，小说写作新时代</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://www.xiaomengai.com/dashboard/novels">
-                        <div class="item">
-                            <div class="no-logo">彩云小梦</div>
-                            <div class="desc">故事创作</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://ibiling.cn/paper?from=aibotpaper">
-                        <div class="item">
-                            <div class="no-logo">笔灵AI论文写作</div>
-                            <div class="desc">AI论文写作助手、论文生成器</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://miaobi.xinhuaskl.com/?channel=shuzhi">
-                        <div class="item">
-                            <div class="no-logo">新华妙笔</div>
-                            <div class="desc">AI公文写作学习平台</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://copyai.cn/creativestage">
-                        <div class="item">
-                            <div class="no-logo">copyai</div>
-                            <div class="desc">营销文案</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://write.youdao.com/#/homepage">
-                        <div class="item">
-                            <div class="no-logo">有道写作</div>
-                            <div class="desc">写作批改</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://www.ximalaya.com/gatekeeper/write-wise-web?ref=ai-bot.cn">
-                        <div class="item">
-                            <div class="no-logo">WriteWise</div>
-                            <div class="desc">小说写作</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://ilingban.com/chat/">
-                        <div class="item">
-                            <div class="no-logo">灵办</div>
-                            <div class="desc">免费润色</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://bot.360.com/">
-                        <div class="item">
-                            <div class="no-logo">360AI助手</div>
-                            <div class="desc">AI搜索融合</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://yuanbao.tencent.com/chat">
-                        <div class="item">
-                            <div class="no-logo">腾讯元宝</div>
-                            <div class="desc">写万字小说、文章、知识</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- AI绘画工具 -->
-            <div class="box">
-                <a href="" name="aihh"></a>
-                <div class="sub-category">
-                    <div><i class="iconfont icon-tool"></i>AI绘画工具</div>
-                </div>
-                <div>
-                    <a target="_blank" href="https://www.midjourney.com/home">
-                        <div class="item">
-                            <div class="no-logo">Midjourney</div>
-                            <div class="desc">最火的AI图像和插画生成工具</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://stablediffusionweb.com/">
-                        <div class="item">
-                            <div class="no-logo">Stable Diffusion</div>
-                            <div class="desc">StabilityAI推出文本到图像生成AI</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://www.canva.cn/">
-                        <div class="item">
-                            <div class="no-logo">Canva</div>
-                            <div class="desc">在线设计工具Canva推出的AI图像生成工具</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://clipdrop.co/">
-                        <div class="item">
-                            <div class="no-logo">Clipdrop</div>
-                            <div class="desc">P图、抠图、移除背景、放大图片、文本删除、绘制图片，一个工具全搞定。无需安装，在线免费使用</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://www.logosc.cn/">
-                        <div class="item">
-                            <div class="no-logo">标小志</div>
-                            <div class="desc">超过500万用户的AI智能logo设计神器</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://www.gaoding.com/ai/design">
-                        <div class="item">
-                            <div class="no-logo">稿定智能设计</div>
-                            <div class="desc">输入文案一键生成小红书公众号等配图</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://www.midjourny.cn/home/#?from=invite&invite_id=31497217">
-                        <div class="item">
-                            <div class="no-logo">MJ中文站</div>
-                            <div class="desc">让创意充满无限可能</div>
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-
-            <!-- AI办公工具 -->
-            <div class="box">
-                <a href="" name="aibg"></a>
-                <div class="sub-category">
-                    <div><i class="iconfont icon-tool"></i>AI办公工具</div>
-                </div>
-                <div>
-                    <a target="_blank" href="https://wenku.baidu.com/">
-                        <div class="item">
-                            <div class="no-logo">百度文库AI助手</div>
-                            <div class="desc">基于百度文心一言的一站式只能文档助手</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://chat-ppt.com/">
-                        <div class="item">
-                            <div class="no-logo">ChatPPT</div>
-                            <div class="desc">必优科技推出国内首个中文AI生成PPT的办公产品</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://ai.wps.cn/">
-                        <div class="item">
-                            <div class="no-logo">WPS AI</div>
-                            <div class="desc">WPS推出的AI办公助手</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://tingwu.aliyun.com/home">
-                        <div class="item">
-                            <div class="no-logo">通义听悟</div>
-                            <div class="desc">阿里推出的AI会议转录工具</div>
-                        </div>
-                    </a>
-
-
-                </div>
-            </div>
-
-            <!-- AI视频工具 -->
-            <div class="box">
-                <a href="" name="aisp"></a>
-                <div class="sub-category">
-                    <div><i class="iconfont icon-tool"></i>AI视频工具</div>
-                </div>
-                <div>
-                    <a target="_blank" href="https://app.runwayml.com/login">
-                        <div class="item">
-                            <div class="no-logo">Runway</div>
-                            <div class="desc">强大的AI视频制作工具</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://pika.art/home">
-                        <div class="item">
-                            <div class="no-logo">Pika</div>
-                            <div class="desc">PikaLabs推出的AI视频生成和编辑工具</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://www.heygen.com/">
-                        <div class="item">
-                            <div class="no-logo">HeyGen</div>
-                            <div class="desc">专业的AI数字人视频生成工具</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://weta365.com/">
-                        <div class="item">
-                            <div class="no-logo">奇妙元</div>
-                            <div class="desc">AI数字人视频生成平台，由出门问问推出</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://aigc.baidu.com/home">
-                        <div class="item">
-                            <div class="no-logo">度加创作工具</div>
-                            <div class="desc">百度官方出品的AIGC创作平台</div>
-                        </div>
-                    </a>
-
-
-                </div>
-            </div>
-
-            <!-- AI音频工具 -->
-            <div class="box">
-                <a href="" name="aiyp"></a>
-                <div class="sub-category">
-                    <div><i class="iconfont icon-tool"></i>AI音频工具</div>
-                </div>
-                <div>
-                    <a target="_blank" href="https://www.stableaudio.com/">
-                        <div class="item">
-                            <div class="no-logo">Stable Audio</div>
-                            <div class="desc">Stability AI 最新推出的音乐生成工具</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://suno.com/">
-                        <div class="item">
-                            <div class="no-logo">Suno</div>
-                            <div class="desc">高质量的AI音乐创作平台</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://www.moyin.com/">
-                        <div class="item">
-                            <div class="no-logo">魔音工坊</div>
-                            <div class="desc">AI配音软件，轻松配出媲美真人的声音</div>
-                        </div>
-                    </a>
-
-
-                </div>
-            </div>
-
-            <!-- API工具 -->
-            <div class="box">
-                <a href="" name="apigj"></a>
-                <div class="sub-category">
-                    <div><i class="iconfont icon-tool"></i>（API工具）</div>
-                </div>
-                <div>
-                    <a target="_blank" href="https://www.jijyun.cn/">
-                        <div class="item">
-                            <div class="no-logo">集简云</div>
-                            <div class="desc">软件集成可以如此简单</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://www.coze.cn/">
-                        <div class="item">
-                            <div class="no-logo">扣子</div>
-                            <div class="desc">由AI提供支持的内容写作助手</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://www.coze.com/">
-                        <div class="item">
-                            <div class="no-logo">coze</div>
-                            <div class="desc">由AI提供支持的内容写作助手</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://apifox.com/">
-                        <div class="item">
-                            <div class="no-logo">API平台</div>
-                            <div class="desc">API 设计、开发、测试一体化协作平台</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://apifox.com/blog/apifox-tutorial-collection/">
-                        <div class="item">
-                            <div class="no-logo">Apifox 使用教程</div>
-                            <div class="desc">Apifox 使用教程合集，从小白到大师</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://courier.toptopn.com/">
-                        <div class="item">
-                            <div class="no-logo">网页更新提醒</div>
-                            <div class="desc">追踪网页内容变化并立即通知您，7x24小时帮您盯着</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://dify.ai/zh">
-                        <div class="item">
-                            <div class="no-logo">Dify</div>
-                            <div class="desc">生成式 AI 应用创新引擎</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-
-            <!-- 国外工具 -->
-            <div class="box">
-                <a href="" name="gwgj"></a>
-                <div class="sub-category">
-                    <div><i class="iconfont icon-tool"></i>（国外工具）</div>
-                </div>
-                <div>
-                    <a target="_blank" href="https://www.google.com">
-                        <div class="item">
-                            <div class="no-logo">谷歌</div>
-                            <div class="desc">谷歌</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://www.google.com/gmail">
-                        <div class="item">
-                            <div class="no-logo">谷歌邮箱</div>
-                            <div class="desc">谷歌邮箱</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://translate.google.com">
-                        <div class="item">
-                            <div class="no-logo">谷歌翻译</div>
-                            <div class="desc">谷歌翻译</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://github.com/login">
-                        <div class="item">
-                            <div class="no-logo">github</div>
-                            <div class="desc">github</div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://code.visualstudio.com/download">
-                        <div class="item">
-                            <div class="no-logo">Visual Studio Code</div>
-                            <div class="desc">Download Visual Studio Code</div>
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-
-
-            <footer class="footer">
-                <div class="copyright">
-                    <div>
-                        Copyright © 2018- 2024
-                        <a href="/index.html">官网</a>
-                    </div>
-                </div>
-            </footer>
-            <div id="fixedBar">
-                <svg class="Zi Zi--BackToTop" title="回到顶部" fill="currentColor" viewBox="0 0 24 24" width="24"
-                     height="24">
-                    <path d="M16.036 19.59a1 1 0 0 1-.997.995H9.032a.996.996 0 0 1-.997-.996v-7.005H5.03c-1.1 0-1.36-.633-.578-1.416L11.33 4.29a1.003 1.003 0 0 1 1.412 0l6.878 6.88c.782.78.523 1.415-.58 1.415h-3.004v7.005z"></path>
-                </svg>
-            </div>
-        </div>
-    </section>
-
-
-    <script src="js/jquery.js"></script>
-    <script>
-        var oMenu = document.getElementById('menu');
-        var oLeftBar = document.getElementById('leftBar');
-        var menuFrom = document.getElementById('menu-form');
-
-        oMenu.onclick = function () {
-            if (oLeftBar.offsetLeft == 0) {
-                oLeftBar.style.left = -249 + 'px';
-            } else {
-                oLeftBar.style.left = 0;
-            }
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>AI智能体 - 智能机器人</title><meta name="author" content="Micky"><meta name="copyright" content="Micky"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="AI改变生活">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI智能体">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="AI智能体">
+<meta property="og:description" content="AI改变生活">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/butterfly-icon.png">
+<meta property="article:author" content="Micky">
+<meta property="article:tag" content="AI，AGI，agent，gtp，智能体">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/butterfly-icon.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
         }
+        return value
+      }
+    }
 
-
-        // 监听页面宽度变化
-        window.onresize = function () {
-            judgeWidth();
-            // console.log(document.documentElement.clientWidth);
-        };
-
-        // 判断页面宽度
-        function judgeWidth() {
-            if (document.documentElement.clientWidth > 481) {
-                oLeftBar.style.left = 0;
-            } else {
-                oLeftBar.style.left = -249 + 'px';
-            }
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
         }
-
-
-        var oNavItem = document.getElementById('navItem');
-        var aA = oNavItem.getElementsByTagName('a');
-        for (var i = 0; i < aA.length; i++) {
-            aA[i].onclick = function () {
-                for (var j = 0; j < aA.length; j++) {
-                    aA[j].className = '';
-                }
-                this.className = 'active';
-                if (oLeftBar.offsetLeft == 0) {
-                    if (document.documentElement.clientWidth <= 481) {
-                        oLeftBar.style.left = -249 + 'px';
-                        menuFrom.checked = false;
-
-                    }
-                }
-            }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
         }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        if (name && globalFn[key][name]) return
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
 
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
 
-        $(window).scroll(function () {
-            if ($(window).scrollTop() >= 200) {
-                $('#fixedBar').fadeIn(300);
-            } else {
-                $('#fixedBar').fadeOut(300);
-            }
-        });
-        $('#fixedBar').click(function () {
-            $('html,body').animate({scrollTop: '0px'}, 800);
-        })
-    </script>
-</div>
-</body>
-
-</html>
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'AI智能体',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-10-23 00:00:20'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/butterfly-icon.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://chat.openai.plus/home"><i class="fa-fw fas fa-heart"></i><span> AI工具</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.waytoagi.com/prompts"><i class="fa-fw fas fa-heart"></i><span> 提示词</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.achuanai.com/user-center?inVitecode=EVOSEQYXGM"><i class="fa-fw fas fa-heart"></i><span> 阿川Ai</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-align-justify"></i><span> 栏目</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E5%9B%BD%E5%A4%96/"><i class="fa-fw fa fa-line-chart"></i><span> 国外</span></a></li><li><a class="site-page child" href="/categories/%E5%9B%BD%E5%86%85/"><i class="fa-fw fa fa-bullseye"></i><span> 国内</span></a></li><li><a class="site-page child" href="/categories/%E7%BB%98%E7%94%BB/"><i class="fa-fw fa fa-bar-chart"></i><span> 绘画</span></a></li><li><a class="site-page child" href="/categories/%E5%8A%9E%E5%85%AC/"><i class="fa-fw fa fa-bug"></i><span> 办公</span></a></li><li><a class="site-page child" href="/categories/%E8%A7%86%E9%A2%91/"><i class="fa-fw fa fa-pie-chart"></i><span> 视频</span></a></li><li><a class="site-page child" href="/categories/%E9%9F%B3%E9%A2%91/"><i class="fa-fw fa fa-cogs"></i><span> 音频</span></a></li><li><a class="site-page child" href="/categories/API/"><i class="fa-fw fas fa-comments"></i><span> API</span></a></li><li><a class="site-page child" href="/categories/%E6%BC%AB%E7%94%BB/"><i class="fa-fw fa fa-sitemap"></i><span> 漫画</span></a></li><li><a class="site-page child" href="/categories/%E9%A9%B1%E5%8A%A8%E4%BA%BA%E7%94%9F/"><i class="fa-fw fa fa-at"></i><span> 驱动人生</span></a></li><li><a class="site-page child" href="/categories/%E8%AE%BE%E8%AE%A1/"><i class="fa-fw fas fa fa-table"></i><span> 设计</span></a></li><li><a class="site-page child" href="/categories/%E6%95%B0%E5%AD%97%E4%BA%BA/"><i class="fa-fw fas fa-fa fa-jpy"></i><span> 数字人</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-link"></i><span> 友链</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.waytoagi.com/"><i class="fa-fw fa fa-dollar"></i><span> 通往AGI之路</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://gpt-aigc.com/"><i class="fa-fw fas fa-images"></i><span> 顺众AI</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://aiweaver.feishu.cn/wiki/VsPWwY5VJi3BOTkMimPcWQaRnJe"><i class="fa-fw fa fa-link"></i><span> AI严选</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://tauacgr5lqv.feishu.cn/docx/ZnPedHE3loaQ5MxwE7TctC6PnNh"><i class="fa-fw fa fa-link"></i><span> 艾文AIGC知识库</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.learnprompt.pro/docs/intro"><i class="fa-fw fa fa-link"></i><span> learnprompt</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://openai.plus/resource"><i class="fa-fw fa fa-link"></i><span> OpenAI</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://aituts.com/"><i class="fa-fw fa fa-link"></i><span> aituts</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://qa3dhma45mc.feishu.cn/wiki/Jg6swNOeWiErGNkMJJ4ca0kQnVb"><i class="fa-fw fa fa-link"></i><span> aigc</span></a></li></ul></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://fanyi.youdao.com/"><i class="fa-fw fa fa-language"></i><span> 翻译</span></a></div><div class="menus_item"><a class="site-page" href="/tools/"><i class="fa-fw fa fa fa-database"></i><span> 军火库</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">AI智能体</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://chat.openai.plus/home"><i class="fa-fw fas fa-heart"></i><span> AI工具</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.waytoagi.com/prompts"><i class="fa-fw fas fa-heart"></i><span> 提示词</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.achuanai.com/user-center?inVitecode=EVOSEQYXGM"><i class="fa-fw fas fa-heart"></i><span> 阿川Ai</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-align-justify"></i><span> 栏目</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E5%9B%BD%E5%A4%96/"><i class="fa-fw fa fa-line-chart"></i><span> 国外</span></a></li><li><a class="site-page child" href="/categories/%E5%9B%BD%E5%86%85/"><i class="fa-fw fa fa-bullseye"></i><span> 国内</span></a></li><li><a class="site-page child" href="/categories/%E7%BB%98%E7%94%BB/"><i class="fa-fw fa fa-bar-chart"></i><span> 绘画</span></a></li><li><a class="site-page child" href="/categories/%E5%8A%9E%E5%85%AC/"><i class="fa-fw fa fa-bug"></i><span> 办公</span></a></li><li><a class="site-page child" href="/categories/%E8%A7%86%E9%A2%91/"><i class="fa-fw fa fa-pie-chart"></i><span> 视频</span></a></li><li><a class="site-page child" href="/categories/%E9%9F%B3%E9%A2%91/"><i class="fa-fw fa fa-cogs"></i><span> 音频</span></a></li><li><a class="site-page child" href="/categories/API/"><i class="fa-fw fas fa-comments"></i><span> API</span></a></li><li><a class="site-page child" href="/categories/%E6%BC%AB%E7%94%BB/"><i class="fa-fw fa fa-sitemap"></i><span> 漫画</span></a></li><li><a class="site-page child" href="/categories/%E9%A9%B1%E5%8A%A8%E4%BA%BA%E7%94%9F/"><i class="fa-fw fa fa-at"></i><span> 驱动人生</span></a></li><li><a class="site-page child" href="/categories/%E8%AE%BE%E8%AE%A1/"><i class="fa-fw fas fa fa-table"></i><span> 设计</span></a></li><li><a class="site-page child" href="/categories/%E6%95%B0%E5%AD%97%E4%BA%BA/"><i class="fa-fw fas fa-fa fa-jpy"></i><span> 数字人</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-link"></i><span> 友链</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.waytoagi.com/"><i class="fa-fw fa fa-dollar"></i><span> 通往AGI之路</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://gpt-aigc.com/"><i class="fa-fw fas fa-images"></i><span> 顺众AI</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://aiweaver.feishu.cn/wiki/VsPWwY5VJi3BOTkMimPcWQaRnJe"><i class="fa-fw fa fa-link"></i><span> AI严选</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://tauacgr5lqv.feishu.cn/docx/ZnPedHE3loaQ5MxwE7TctC6PnNh"><i class="fa-fw fa fa-link"></i><span> 艾文AIGC知识库</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.learnprompt.pro/docs/intro"><i class="fa-fw fa fa-link"></i><span> learnprompt</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://openai.plus/resource"><i class="fa-fw fa fa-link"></i><span> OpenAI</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://aituts.com/"><i class="fa-fw fa fa-link"></i><span> aituts</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://qa3dhma45mc.feishu.cn/wiki/Jg6swNOeWiErGNkMJJ4ca0kQnVb"><i class="fa-fw fa fa-link"></i><span> aigc</span></a></li></ul></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://fanyi.youdao.com/"><i class="fa-fw fa fa-language"></i><span> 翻译</span></a></div><div class="menus_item"><a class="site-page" href="/tools/"><i class="fa-fw fa fa fa-database"></i><span> 军火库</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">AI智能体</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/undefined/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-10-20T03:25:34.782Z" title="发表于 2024-10-20 11:25:34">2024-10-20</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;  More info: Writing Run server1$ hexo server  More info: Server Generate static files1$ hexo generate  More info: Generating Deploy to remote sites1$ hexo deploy  More info: Deployment </div></div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Micky</div><div class="author-info-description">AI改变生活</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><div class="content"><a class="title" href="/undefined/" title="Hello World">Hello World</a><time datetime="2024-10-20T03:25:34.782Z" title="发表于 2024-10-20 11:25:34">2024-10-20</time></div></div></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+    <ul class="card-archive-list">
+  
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/10/">
+          <span class="card-archive-list-date">十月 2024</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    </ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-10-22T16:00:20.050Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2024 By Micky</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
